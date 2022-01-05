@@ -12,6 +12,14 @@ overflow:hidden;
     float:right;
 
 }
+h3:after{
+    content: " ";
+    display:block;
+    width:30px;
+    height:4px;
+    background: orangered;
+    margin-top:5px;
+    }
 .header-area{
     width:15%;
     margin-right:5% ;
@@ -44,6 +52,12 @@ overflow:hidden;
 }
 .logo-area h3{
     text-transform: capitalize;
+}
+.logo-area h3:after{
+    width:none;
+    height:none;
+    background:none;
+    margin-top:none;
 }
 .logo-area p{
     margin-bottom: 20%;
@@ -89,13 +103,18 @@ overflow:hidden;
 /*--------main area astart-----------*/
 .main-site{
     color:white;
-    background-color:mediumblue;
+    background-color: #0000CD;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     padding: 120px 80px;
     border-radius: 20px;
     box-shadow: 2px 10px 10px 2px black;
     margin-bottom: 3%;
     border-radius: 17px;
+
+  
 }
+
 .main-site h1{
     text-transform: capitalize;
     font-size:50px;
@@ -139,14 +158,6 @@ overflow:hidden;
     text-transform: capitalize;
     margin-bottom:8%;
     text-transform:capitalize;
-}
-.title-area h3:after{
-content: " ";
-display:block;
-width:20px;
-height:2px;
-background: orangered;
-margin-top:5px;
 }
 .left-area{
     overflow:hidden;
@@ -206,14 +217,7 @@ margin-top:5px;
     margin-bottom:5%;
     text-transform:capitalize;
 }
-.skill-site h3:after{
-content: " ";
-display:block;
-width:20px;
-height:2px;
-background: orangered;
-margin-top:5px;
-}
+
 .skill-site p{
     margin-top: 3%;
     margin-bottom: 3%;
@@ -256,15 +260,6 @@ margin-top:5px;
 
 .service-area h3{
     text-transform: capitalize;
-    text-transform:capitalize;
-}
-.service-area h3:after{
-content: " ";
-display:block;
-width:20px;
-height:2px;
-background: orangered;
-margin-top:5px;
 }
 .catagory-one{
     float: left;
@@ -294,10 +289,65 @@ margin-top:5px;
     color:orangered;
     font-size:30px;
 }
-footer{
-    padding:30px 10px;
-    background-image: linear-gradient( snow 30%, #0000CD 50%);
-    text-align:center;
-    color:white;
+.get-touch{
+    background-color: snow;
+    box-shadow: 2px 10px 10px 2px black;
+    padding: 40px 20px;
+    border-radius:17px; 
 }
+.info-area{
+    display: flex;
+}
+.form-left-area{
+    width:20%;
+    margin-right: 3%;
+    margin-left: 5%;
+}
+.details{
+    margin-bottom: 25%;
+}
+.details h4{
+   font-size:20px;
+   text-transform: capitalize;
+   margin-bottom: 5%;
+}
+.details i{
+    position: absolute;
+    left: 28%;
+    font-size: 20px;
+    color: orangered;
+}
+.form-right-area{
+    width:70%;
+    margin-right: 2%;
+}
+.form-right-area input{
+    border-radius: 25px;
+    width: 35%;
+    padding: 10px 24px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #333;
+    background-color: #FFF;
+    background-image: none;
+    border: solid 1px #E3E3E3;
+    margin-right: 2%;
+    margin-bottom: 4%;
+}
+.sub input{
+    width:80%;}
+
+textarea{
+    width: 90%;
+}
+.get-touch h3{
+    text-transform: capitalize;
+    margin-left: 2%;
+    margin-bottom: 8%;
+    font-size: 30px;
+}
+
+
+
 
